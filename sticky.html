@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Photography Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f8f2;
+            color: #333;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: black;
+            padding: 100px 20px 50px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 60px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        header p {
+            font-size: 24px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .section-header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 111, 97, 0.8); 
+            color: white;
+            padding: 20px 0;
+            font-size: 32px; 
+            text-align: center;
+            z-index: 10;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .parallax {
+            background-image: url('./image/sticky/top-view-baked-potatoes-with-minced-meat-greens-inside-grey-plate-dark-blue-desk_140725-49959.avif');
+            height: 300px;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .parallax-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .parallax-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        section {
+            padding: 50px 20px; 
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        section:nth-child(odd) {
+            background-color: #fffaf3; 
+        }
+
+        section:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            font-size: 20px; 
+            line-height: 1.8;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6f61; 
+            color: white;
+            font-size: 16px; 
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Photography Portfolio</h1>
+        <p>Capturing the Beauty of Every Dish</p>
+    </header>
+
+    <div class="parallax">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-text">Explore the Art of Food Photography</div>
+    </div>
+
+    <section>
+        <div class="section-header">Breakfast Delights</div>
+        <div class="content">
+            Breakfast is the most important meal of the day, and capturing its beauty is an art form.
+            From pancakes to fruit bowls, this gallery celebrates the warmth and creativity of breakfast foods.
+        </div>
+        <div class="gallery">
+            <img src="./image/sticky/pancake.avif" alt="Pancakes">
+            <img src="./image/sticky/fruitbowl.avif" alt="Fruit Bowl">
+            <img src="./image/sticky/coffee.avif" alt="Coffee and Muffins">
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">Sweet Desserts</div>
+        <div class="content">
+            Dive into a world of sugary indulgence. Capture the elegance of desserts from delicate macarons to luxurious cakes.
+            These images show the intricate details that make each dessert an experience.
+        </div>
+        <div class="gallery">
+            <img src="./image/sticky/dessert.avif" alt="Desserts">
+            <img src="./image/sticky/macaroon.avif" alt="Macarons">
+            <img src="./image/sticky/chocolate cake.avif" alt="Chocolate Cake">
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">Refreshing Drinks</div>
+        <div class="content">
+            A beverage is not just a drink; it's a moment of refreshment and relaxation. From smoothies to cocktails, explore 
+            the vibrant colors and textures captured in these images.
+        </div>
+        <div class="gallery">
+            <img src="./image/sticky/smoothy.avif" alt="Smoothie">
+            <img src="./image/sticky/icetea.avif" alt="Iced Tea">
+            <img src="./image/sticky/cocktail.avif" alt="Cocktail">
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">Hearty Main Courses</div>
+        <div class="content">
+            Main courses are the heart of every meal, and their presentation is key to making them shine. 
+            These images capture the bold colors and textures of your favorite hearty dishes.
+        </div>
+        <div class="gallery">
+            <img src="./image/sticky/maincorce.avif" alt="Main Course">
+            <img src="./image/sticky/steak.avif" alt="Steak">
+            <img src="./image/sticky/pasta.avif" alt="Pasta">
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Food Photography Portfolio | All Rights Reserved
+    </footer>
+
+</body>
+</html>
