@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portrait Photography Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            width: 100%;
+            background: linear-gradient(to right, #5c5470, #7a7265); 
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 60px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        header p {
+            font-size: 25px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .banner {
+            width: 100%;
+            height: 450px;
+            background: url('./image/relative/cute-girl-posing-front-her-friend-capturing-her-photo-with-camera-against-blue-backdrop_23-2148080297.avif') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            color: white;
+            padding-left: 40px;
+            font-size: 50px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+        .banner span {
+            position: relative;
+            left: 10px;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .intro h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #5c5470;
+        }
+        .intro p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #666;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            position: relative;
+        }
+        .gallery img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .quote-section {
+            background: #7a7265;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 60px 0;
+            border-radius: 10px;
+            position: relative; 
+        }
+        .quote-section p {
+            font-size: 25px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        .about img {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            top: 10px;
+        }
+        .about-text {
+            flex: 2;
+            padding: 25px;
+            font-size: 20px;
+            line-height: 1.7;
+            color: #444;
+        }
+        .contact-section {
+            background: #5c5470;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .contact-section h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .contact-section p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #3b3a47;
+            color: white;
+            margin-top: 60px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portrait Photography Portfolio</h1>
+        <p>Capturing expressions, one click at a time</p>
+    </header>
+
+    <div class="banner">
+        <span>Portraits That Tell Stories</span>
+    </div>
+
+    <section class="intro">
+        <h2>Welcome to My Portrait Photography</h2>
+        <p>
+            Portrait photography is an art that freezes the essence of a moment—the soul of a person, 
+            their emotions, and the spark in their eyes. Step into a gallery where every portrait 
+            narrates a unique tale.
+        </p>
+    </section>
+
+    <section>
+        <h2 style="text-align:center; margin-bottom: 50px;">Gallery of Portraits</h2>
+        <div class="gallery">
+            <img src="./image/relative/concentrated-young-lady-photographer_171337-3508.avif" alt="Portrait 1">
+            <img src="./image/relative/man-his-professional-photography-studio_23-2149033378.avif" alt="Portrait 2">
+            <img src="./image/relative/portrait-woman-holding-device-taking-photos-world-photography-day_23-2151704407.avif" alt="Portrait 3">
+            <img src="./image/relative/tender-woman-with-flower-twigs-near-face_23-2148105431.avif" alt="Portrait 4">
+            <img src="./image/relative/woman-sitting-window-sill-photo-art-concept_23-2148565524.avif" alt="Portrait 5">
+            <img src="./image/relative/young-hindu-photographer-black-hoody-with-camera-wall_496169-1567.avif" alt="Portrait 6">
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <p>
+            "The best thing about a picture is that it never changes, even when the people in it do." <br> — Andy Warhol
+        </p>
+    </section>
+
+    <section>
+        <h2 style="text-align:center; margin-bottom: 50px;">About the Photographer</h2>
+        <div class="about">
+            <img src="./image/relative/young-pretty-woman-listening-music-wireless-earphones_1303-20584.avif" alt="Photographer">
+            <div class="about-text">
+                <p>
+                    Hi, I’m Riya. I specialize in portrait photography, capturing moments that go beyond the lens. 
+                    From candid expressions to planned photoshoots, my work celebrates the uniqueness of every individual. 
+                    Each shot reflects my love for detail and storytelling.
+                </p>
+                <p>
+                    My aim is to create timeless memories, blending light, emotion, and personality into every frame. 
+                    Let me capture your story through my lens.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Get in Touch</h2>
+        <p>
+            Want to book a session or learn more? Drop me a message!
+        </p>
+        <p>Email: portraitstudio@example.com</p>
+    </section>
+
+    <footer>
+        &copy; 2024 Portrait Photography | All Rights Reserved
+    </footer>
+
+</body>
+</html>
